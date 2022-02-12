@@ -1,6 +1,8 @@
 // /* Media Querys */
 // /* Diseno comienza desde base Mobile First Galaxy S8 360w */
 // /* Ajustes Ipad Air 820 w */
+@use "utilidades";
+@use "variables";
 
 @media screen and (min-width: 820px) {
   .contenedorCall {
@@ -18,15 +20,39 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  // Modificacion de los estilos de la navbar
+  .nav-link {
+    @include utilidades.propiedadesTexto(
+      variables.$colorNegro,
+      variables.$fuenteBasker,
+      1.25rem,
+      10px,
+      auto
+    );
+  }
+
+  .navbar-nav {
+    flex: 1;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 60px;
+    li{
+      padding-left: 0px;
+    }
+  }
+}
+
 // /* Ajustes para PCs en adelante */
 @media screen and (min-width: 1024px) {
   .contenedorCall {
     width: 40%;
   }
-  .headerBanner{
+  .headerBanner {
     font-size: 3.75rem;
   }
-  .botonBanner{
+  .botonBanner {
     font-size: 1.875rem;
   }
 }
