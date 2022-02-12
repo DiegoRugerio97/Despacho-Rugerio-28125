@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -558,7 +559,7 @@ template {
 }
 
 .footerTitulo {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .footerLogo {
@@ -716,7 +717,7 @@ template {
 }
 
 .footerTitulo {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .footerLogo {
@@ -828,7 +829,7 @@ template {
 }
 
 .footerTitulo {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .footerLogo {
@@ -901,7 +902,7 @@ template {
 .nav-link {
   color: #000000;
   font-family: "Libre Baskerville";
-  font-size: 1.25rem;
+  font-size: 1rem;
   padding: 10px;
   margin: auto;
   transition: all 0.25s;
@@ -911,11 +912,13 @@ template {
 }
 
 .navbar-nav {
-  flex: 1;
   display: flex;
+  flex-flow: column nowrap;
   justify-content: flex-end;
-  align-items: flex-end;
-  gap: 60px;
+  align-items: flex-start;
+}
+.navbar-nav li {
+  padding-left: 10px;
 }
 
 .container {
@@ -979,6 +982,118 @@ template {
     visibility: visible;
   }
 }
+.flexColumna, .flexColumnaAround, .contenedorCall, .flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo {
+  justify-content: center;
+}
+
+.flexColumnaAround, .contenedorCall {
+  justify-content: space-around;
+}
+
+.flexRow, .footer {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contenedorHeader {
+  animation-name: aparecer;
+  animation-iteration-count: aparecer;
+  animation-timing-function: ease-in;
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
+  background-image: linear-gradient(to bottom, #ffffff, rgba(0, 0, 0, 0.315));
+}
+
+.contenedorHeaderLogo {
+  height: 90px;
+  width: 200px;
+}
+
+.bodyFondo {
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='48' height='64' viewBox='0 0 48 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M48 28v-4L36 12 24 24 12 12 0 24v4l4 4-4 4v4l12 12 12-12 12 12 12-12v-4l-4-4 4-4zM8 32l-6-6 10-10 10 10-6 6 6 6-10 10L2 38l6-6zm12 0l4-4 4 4-4 4-4-4zm12 0l-6-6 10-10 10 10-6 6 6 6-10 10-10-10 6-6zM0 16L10 6 4 0h4l4 4 4-4h4l-6 6 10 10L34 6l-6-6h4l4 4 4-4h4l-6 6 10 10v4L36 8 24 20 12 8 0 20v-4zm0 32l10 10-6 6h4l4-4 4 4h4l-6-6 10-10 10 10-6 6h4l4-4 4 4h4l-6-6 10-10v-4L36 56 24 44 12 56 0 44v4z' fill='%231a374d' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-repeat: repeat;
+  width: 100%;
+}
+
+.textoTitulo {
+  color: #1a374d;
+  font-family: "Libre Baskerville";
+  font-size: 2.5rem;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.textoSubtitulo {
+  color: #406882;
+  font-family: "Libre Baskerville";
+  font-size: 1.375rem;
+  padding: 0px 10px;
+  margin: 15px 0px;
+}
+
+.textoEncabezado {
+  color: #8a8a8a;
+  font-family: "Libre Baskerville";
+  font-size: 1.25rem;
+  padding: 10px;
+  margin: 0px 5px;
+}
+
+.textoParrafo {
+  color: #000000;
+  font-family: sans-serif;
+  font-size: 1.06rem;
+  padding: 10px;
+  margin: 0px 5px;
+  text-align: justify;
+}
+
+.footer {
+  height: 150px;
+  margin-top: 30px;
+}
+
+.footerTitulo {
+  font-size: 1rem;
+}
+
+.footerLogo {
+  justify-self: end;
+}
+
+.centrado {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cursiva {
+  font-style: italic;
+}
+
+.alignCentro {
+  text-align: center;
+}
+
+.video {
+  margin: 20px;
+  width: 80%;
+  min-height: 400px;
+}
+
+.display {
+  display: none;
+}
+
 @media screen and (min-width: 820px) {
   .contenedorCall {
     width: 60%;
@@ -994,6 +1109,26 @@ template {
 
   .display {
     display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-link {
+    color: #000000;
+    font-family: "Libre Baskerville";
+    font-size: 1.25rem;
+    padding: 10px;
+    margin: auto;
+  }
+
+  .navbar-nav {
+    flex: 1;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 60px;
+  }
+  .navbar-nav li {
+    padding-left: 0px;
   }
 }
 @media screen and (min-width: 1024px) {
