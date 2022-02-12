@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS de Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <!-- CSS de AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- CSS Propio -->
+    <link rel="stylesheet" href="./styles/css/styles.css" />
+    <title>Alianza y Consultoría Empresarial C&R</title>
+    <!-- SEO - Keywords -->
+    <meta name="keywords" content="Servicios contables, Servicios fiscales, Servicios administrativos, optimizacion, nomina, contabilidad electrónica,estados financieros,auditoria, control interno">
+    <!-- SEO Descripcion -->
+    <meta name="description" content="Somos un despacho contable con amplia experiencia en temas fiscales y de control interno. Nos ponemos a sus órdenes para que, en conjunto, busquemos las mejores soluciones contables, fiscales o de soluciones administrativas.">
+  </head>
+  <body class="bodyFondo">
+    <!-- Nav Responsive de BS -->
+    <nav class="navbar navbar-expand-md navbar-light row py-0 contenedorHeader">
+      <!-- Logo -->
+      <a class="navbar-brand" href="./index.html"
+        ><img src="./img/logo.svg" alt="Logo" class="contenedorHeaderLogo"
+      /></a>
+      <!-- Toggler/collapsibe Button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./secciones/conocenos.html">Conócenos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./secciones/servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./secciones/contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./secciones/blog.html">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Contenido de la página -->
+    <!-- Galeria + Call to action -->
+    <!-- BEM -->
+    <section class="display container-fluid px-0">
+      <div class="row">
+        <section class="gridGaleria col px-0">
+          <div class="imgGaleria imagen1"></div>
+          <div class="imgGaleria imagen2"></div>
+          <div class="imgGaleria imagen3"></div>
+          <div class="imgGaleria imagen4"></div>
+        </section>
+        <div class="contenedorCall col px-0">
+          <img src="./img/logo.svg" alt="Logo Despacho" class="logoBanner" />
+          <h1 class="headerBanner">Expertos en Contabilidad</h2>
+          <a href="./secciones/servicios.html"
+            ><button class="botonBanner">Conoce nuestros servicios</button>
+            /></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Contenedor de contenido -->
+    <main class="container">
+      <!-- Bienvenida -->
+      <section class="row" data-aos="fade-up" data-aos-duration="1500">
+        <h2 class="textoTitulo alignCentro col-sm-12">Bienvenido a Alianza y Consultoria Empresarial C&R</h1>
+        <p class="textoSubtitulo cursiva alignCentro col-sm-12">
+          <em
+            >"En la actualidad la relación con el contador debe ser tan íntima y
+            estrecha, y casi tan parecida, como la que se tiene con el médico
+            personal”.</em
+          >
+        </p>
+      </section>
+
+      <!-- Slider -->
+      <!-- Clases de BS -->
+      <div
+        class="carousel slide carousel-fade row w-75 mx-auto rounded"
+        data-ride="carousel"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="10000">
+            <img src="./img/index/imagen-1.jpg" class="rounded" alt="Calculos Contables" />
+          </div>
+          <div class="carousel-item" data-interval="10000">
+            <img src="./img/index/imagen-4.jpg" class="rounded" alt="Empresa" />
+          </div>
+          <div class="carousel-item" data-interval="10000">
+            <img src="./img/index/imagen-3.jpg" class="rounded" alt="Reunion profesional" />
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <!-- Info del despacho -->
+      <section class="row justify-content-around" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="row justify-content-around align-items-center row-col-2">
+          <div class="col px-0" >
+            <h2 class="textoSubtitulo">¿Quienes sómos?</h2>
+            <p class="textoParrafo">
+              Somos contadores públicos con amplia experiencia en temas fiscales
+              y de control interno. <br />
+              Somos contadores especializados por más de 20 años en brindar
+              servicios y asesoría en materia contable, fiscal, legal,
+              tributación internacional e implementación de negocios de diversos
+              sectores económicos.
+            </p>
+          </div>
+          <!-- Aside con links a otras secciones -->
+          <aside
+            class="infoCall col px-0"
+          >
+            <h3 class="textoSubtitulo alignCentro">
+              ¿Estás recibiendo la asesoría correcta?
+            </h3>
+            <p class="textoParrafo">
+              Revisa nuestros servicios especializados.
+            </p>
+            <a href="./secciones/servicios.html">
+              <button class="btn btn-light">Servicios</button>
+            </a>
+            <p class="textoParrafo">
+              Contactanos para agendar una cita y atender todas tus dudas.
+            </p>
+            <a href="./secciones/contacto.html"
+              ><button class="btn btn-light">Contacto</button></a
+            >
+          </aside>
+        </div>
+        <!-- Imagen de la seccion -->
+        <div
+          class="row justify-content-around align-items-center row-col-2"
+        >
+          <img
+            src="./img/index/imagen-2.jpg"
+            class="infoImg col display"
+            alt="Junta"
+          />
+          <!-- Aside  -->
+          <aside class="infoExtra col">
+            <h2 class="textoSubtitulo">Somos expertos.</h3>
+            <p class="textoParrafo">
+              Lo que nos distingue es que trabajamos de manera cercana con cada
+              cliente para garantizar que su asesoramiento y las necesidades de
+              cumplimiento sean oportunas y debidamente atendidas.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Informacion de servicios -->
+      <h2 class="textoTitulo alignCentro">
+        Nuestras áreas de <em>expertise</em>.
+      </h2>
+      <section
+        class="row infoServicios"
+        data-aos="flip-left"
+        data-aos-duration="1500"
+      >
+        <!-- Contable-->
+        <h3 class="textoSubtitulo mx-auto">Contable</h3>
+        <div class="row">
+          <div class="col-sm-12 col-md-5">
+            <div class="infoServiciosCirculo mx-auto">
+              <img
+                src="./img/index/money.png"
+                alt="Contables"
+                class="infoServiciosIcono mx-auto"
+              />
+            </div>
+          </div>
+          <p class="textoParrafo col">
+            La contabilidad es un recurso del que se dispone para administrar
+            los gastos e ingresos de una compañía. Cualquier empresa en el
+            desarrollo de su actividad realiza operaciones de compra, venta,
+            financiación como consecuencia de esas actividades su patrimonio
+            varía y obtiene un beneficio o una pérdida.
+          </p>
+        </div>
+        <!-- Alianza -->
+        <h3 class="textoSubtitulo mx-auto">Alianza</h3>
+        <div class="row">
+          <div class="col-sm-12 col-md-5">
+            <div class="infoServiciosCirculo mx-auto">
+              <img
+                src="./img/index/handshake.png"
+                alt="Alianza"
+                class="infoServiciosIcono mx-auto"
+              />
+            </div>
+          </div>
+          <p class="textoParrafo col">
+            Nuestro equipo tiene habilidades altamente especializadas para
+            ayudarte a resolver cualquier problema que enfrentes en nuestro
+            ámbito de trabajo, evaluando tus circunstancias personales y/o
+            comerciales, brindándote tranquilidad y confianza con soluciones
+            puntuales e inmediatas
+          </p>
+        </div>
+        <!-- Fiscal -->
+        <h3 class="textoSubtitulo mx-auto">Fiscal</h3>
+        <div class="row">
+          <div class="col-sm-12 col-md-5">
+            <div class="infoServiciosCirculo mx-auto">
+              <img
+                src="./img/index/dashboard.png"
+                alt="Fiscales"
+                class="infoServiciosIcono mx-auto"
+              />
+            </div>
+          </div>
+          <p class="textoParrafo col">
+            La contabilidad fiscal es el sistema de información encargado de
+            justificar todos los movimientos económicos y financieros al fisco o
+            autoridad tributaria. Por lo tanto, esta rama contable está dirigida
+            al gobierno, con el fin cumplir con las obligaciones tributarias
+            establecidas por las leyes. La contabilidad fiscal permite realizar
+            los reportes necesarios, en virtud de los cuales la empresa deberá
+            pagar los impuestos correspondientes.
+          </p>
+        </div>
+      </section>
+      <hr />
+      <!-- Noticias -->
+      <section>
+        <div class="row"><h2 class="textoTitulo mx-auto">Noticias</h2></div>
+        <div class="row">
+          <h3 class="textoEncabezado">Nuevo Regimen Fiscal 2022</h3>
+        </div>
+        <div class="row">
+          <p class="textoParrafo">
+            Conoce las novedades en el área contable y físcal.
+          </p>
+        </div>
+        <div class="row">
+          <iframe
+            src="https://www.youtube.com/embed/fHe6ykLu7Go"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            class="video mx-auto"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="container-fluid px-0">
+      <div class="bg-dark footer row">
+        <span class="footerTitulo">Alianza y Consultoría Empresarial C&R</span>
+        <a
+          href="https://www.facebook.com/Alianza-y-Consultor%C3%ADa-Empresarial-CR-104931214911213"
+          ><img
+            src="./img/icons/faceboog.svg"
+            alt="Facebook"
+            class="footerLogoFb"
+        /></a>
+      </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Scripts de AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Inicializacion de AOS -->
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+// Clases base para extender en otras clases
+
+.flexColumna{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  
+}
+
+.flexColumnaCenter{
+  @extend .flexColumna;
+  justify-content: center;
+}
+
+.flexColumnaAround{
+  @extend .flexColumna;
+  justify-content: space-around;
+}
+
+.flexRow{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+// Mixin para animaciones
+
+@mixin animacion($name, $count, $timingFunction, $duration) {
+  animation-name: $name;
+  animation-iteration-count: $name;
+  animation-timing-function: $timingFunction;
+  animation-duration: $duration;
+  animation-fill-mode: forwards;
+}

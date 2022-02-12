@@ -1,0 +1,40 @@
+@use "variables";
+@use "utilidades";
+//  Tabla
+
+.tableEncabezado {
+  th {
+    @include utilidades.propiedadesTexto(
+      variables.$colorAzulB,
+      variables.$fuenteBasker,
+      1.125 rem,
+      auto,
+      auto
+    );
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.tableArea {
+  @include utilidades.propiedadesTexto(
+      variables.$colorAzulA,
+      variables.$fuenteBasker,
+      16px,
+      auto,
+      auto
+    );
+  font-weight: bold;
+  text-align: center;
+}
+
+.tableInformacion {
+  text-align: center;
+}
+
+.tableServicios {
+  li {
+    list-style-image: url(../../img/icons/bullet.svg);
+    list-style-position: inside;
+  }
+}

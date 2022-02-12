@@ -1,0 +1,16 @@
+@use "variables";
+
+// Clases pagina de conocenos
+// Aplicacion de BEM para la informacion
+// Bloque - seccionInfo
+// Elementos - texto, imagen
+// Modificadores - dims
+
+
+.seccionInfo {
+  margin-bottom: 5px;
+}
+
+.imagenMaxHeight50 {
+ height: 50%;
+}

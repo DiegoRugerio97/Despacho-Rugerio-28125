@@ -1,0 +1,12 @@
+@use "variables";
+
+// Clases pagina de blog
+
+.blogPost {
+  margin-bottom: 0.4rem;
+}
+
+.imagenMaxDims300{
+  max-height: 300px;
+  max-width: 300px;
+}

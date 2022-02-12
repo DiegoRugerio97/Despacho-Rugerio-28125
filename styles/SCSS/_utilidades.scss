@@ -1,0 +1,125 @@
+@use "variables";
+@use "clasesBase";
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+
+//Estilos utilizados en todas las secciones
+
+// Clases para el header
+.contenedorHeader {
+  // Se incluye mixin para las animaciones
+  @include clasesBase.animacion(aparecer,1, ease-in,0.75s);
+  background-image: linear-gradient(
+    to bottom,
+    variables.$bgNav1,
+    variables.$bgNav2
+  );
+}
+
+.contenedorHeaderLogo {
+  height: 90px;
+  width: 200px;
+}
+
+.bodyFondo {
+  background-color: variables.$colorBlanco;
+  background-image: url("data:image/svg+xml,%3Csvg width='48' height='64' viewBox='0 0 48 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M48 28v-4L36 12 24 24 12 12 0 24v4l4 4-4 4v4l12 12 12-12 12 12 12-12v-4l-4-4 4-4zM8 32l-6-6 10-10 10 10-6 6 6 6-10 10L2 38l6-6zm12 0l4-4 4 4-4 4-4-4zm12 0l-6-6 10-10 10 10-6 6 6 6-10 10-10-10 6-6zM0 16L10 6 4 0h4l4 4 4-4h4l-6 6 10 10L34 6l-6-6h4l4 4 4-4h4l-6 6 10 10v4L36 8 24 20 12 8 0 20v-4zm0 32l10 10-6 6h4l4-4 4 4h4l-6-6 10-10 10 10-6 6h4l4-4 4 4h4l-6-6 10-10v-4L36 56 24 44 12 56 0 44v4z' fill='%231a374d' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-repeat: repeat;
+  width: 100%;
+}
+
+// Clases para textos
+// Comparten propiedades, se implementa un mixin
+@mixin propiedadesTexto($color, $fuente, $sizeFuente, $padding, $margin) {
+  color: $color;
+  font-family: $fuente;
+  font-size: $sizeFuente;
+  padding: $padding;
+  margin: $margin;
+}
+
+// Cambio a rem
+.textoTitulo {
+  @include propiedadesTexto(
+    variables.$colorAzulB,
+    variables.$fuenteBasker,
+    2.5rem,
+    10px,
+    10px 0px
+  );
+}
+
+.textoSubtitulo {
+  @include propiedadesTexto(
+    variables.$colorAzulA,
+    variables.$fuenteBasker,
+    1.375rem,
+    0px 10px,
+    15px 0px
+  );
+}
+
+.textoEncabezado {
+  @include propiedadesTexto(
+    variables.$colorGris,
+    variables.$fuenteBasker,
+    1.25rem,
+    10px,
+    0px 5px
+  );
+}
+
+.textoParrafo {
+  @include propiedadesTexto(
+    variables.$colorNegro,
+    sans-serif,
+    1.06rem,
+    10px,
+    0px 5px
+  );
+  text-align: justify;
+}
+
+// Clases para el footer
+// Se extiende flexRow en _clasesBase.css
+.footer {
+  @extend .flexRow;
+  height: 150px;
+  margin-top: 30px;
+}
+
+.footerTitulo {
+  font-size: 1.25rem;
+}
+
+.footerLogo {
+  justify-self: end;
+}
+
+// Clases de utilidad
+
+.centrado {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cursiva {
+  font-style: italic;
+}
+
+.alignCentro {
+  text-align: center;
+}
+
+.video {
+  margin: 20px;
+  width: 80%;
+  min-height: 400px;
+}
+
+//En dispositivos chicos, el call to action desaparece para tener una mejor vista
+
+.display {
+  display: none;
+}

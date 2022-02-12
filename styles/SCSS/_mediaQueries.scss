@@ -1,0 +1,32 @@
+// /* Media Querys */
+// /* Diseno comienza desde base Mobile First Galaxy S8 360w */
+// /* Ajustes Ipad Air 820 w */
+
+@media screen and (min-width: 820px) {
+  .contenedorCall {
+    width: 60%;
+  }
+  .headerBanner {
+    font-size: 3.125rem;
+  }
+  .botonBanner {
+    font-size: 2.5rem;
+  }
+  //   /* A partir de 820w se muestra el call to action */
+  .display {
+    display: block;
+  }
+}
+
+// /* Ajustes para PCs en adelante */
+@media screen and (min-width: 1024px) {
+  .contenedorCall {
+    width: 40%;
+  }
+  .headerBanner{
+    font-size: 3.75rem;
+  }
+  .botonBanner{
+    font-size: 1.875rem;
+  }
+}

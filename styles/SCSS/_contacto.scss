@@ -1,0 +1,13 @@
+@use "variables";
+
+// Clases para formulario
+
+.campoTexto {
+  transition: all 0.5s;
+  &:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid variables.$colorAzulA;
+    box-shadow: 0 2px 0 0 variables.$colorAzulA;
+  }
+}

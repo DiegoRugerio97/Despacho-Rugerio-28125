@@ -1,0 +1,169 @@
+@use "./variables";
+@use "./clasesBase";
+// Clases para landing page
+
+// Clases para galeria
+// Clase para contenedor de la galeria
+.gridGaleria {
+  height: 85vh;
+  width: 100%;
+  background-color: variables.$colorGrisTransparente;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1px;
+  z-index: 10;
+}
+
+// Clase para
+.imgGaleria {
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 3px;
+  margin: 1px;
+  visibility: hidden;
+   // Se incluye mixin para las animaciones
+  @include clasesBase.animacion(aparecerArriba,1, ease-out,0.5s);
+}
+
+// Map para imagen y delay
+$imagenesGaleria: (
+  imagen1: 1s,
+  imagen2: 0.75s,
+  imagen3: 0.5s,
+  imagen4: 0.25s,
+);
+// Each para generar las imagenes de la galeria
+@each $imagen, $delay in $imagenesGaleria {
+  .#{$imagen} {
+    background-image: url(../../img/index/galeria/#{$imagen}.jpg);
+    animation-delay: #{$delay};
+  }
+}
+// Propiedades especificas
+.imagen2 {
+  grid-column: 3/4;
+  grid-row: 1/4;
+  background-position: center;
+}
+
+.imagen4 {
+  grid-column: 1/3;
+  grid-row: 2/4;
+  background-position: center;
+}
+
+// CLases del call to action
+// Clase para el contenedor del call to action
+.contenedorCall {
+  // Se extiende el flex
+  @extend .flexColumnaAround;
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  visibility: hidden;
+  height: 85vh;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: variables.$colorGrisTransparente;
+   // Se incluye mixin para las animaciones
+  @include clasesBase.animacion(aparecer,1, ease-out,0.5s);
+  animation-delay: 1.5s;
+}
+
+.headerBanner {
+  color: variables.$colorBlanco;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 100;
+  font-size: 25px;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.botonBanner {
+  color: variables.$colorNegro;
+  background-image: linear-gradient(
+    variables.$bgBotonCall1,
+    variables.$bgBotonCall2
+  );
+  border-radius: 20px;
+  font-family: serif;
+  font-weight: 100;
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+  transition: all 0.5s;
+  &:hover {
+    background-image: linear-gradient(
+      variables.$bgBotonCallHover1,
+      variables.$bgBotonCallHover2
+    );
+    font-size: 30px;
+    transform: scale(1.05, 1.05);
+  }
+  &:active {
+    background-image: linear-gradient(
+      variables.$bgBotonCallActive1,
+      variables.$bgBotonCallActive2
+    );
+    transform: scale(1, 1);
+  }
+}
+
+.logoBanner {
+  width: 400px;
+  height: 150px;
+}
+
+// Clases para la seccion informativa
+
+// Secciones comparten comportamiento de flex
+// Se extiende flexColumna en _clasesBase.css
+.infoCall {
+  @extend .flexColumnaCenter;
+  border-left: 2px solid variables.$colorAzulA;
+  border-right: 2px solid variables.$colorAzulA;
+}
+// Se extiende flexColumna en _clasesBase.css
+.infoExtra {
+  @extend .flexColumnaCenter;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  padding: 0px 0px;
+}
+.infoImg{
+  max-width: 50%;
+
+}
+
+// Clases de la info de los servicios
+
+.infoServicios {
+  margin-top: 0px;
+  border-left: 1px solid variables.$colorAzulA;
+  border-right: 1px solid variables.$colorAzulA;
+}
+// Se extiende flexColumna en _clasesBase.css
+.infoServiciosCirculo {
+  @extend .flexColumnaCenter;
+  border-radius: 50%;
+  height: 175px;
+  width: 175px;
+  transition: all 0.25s;
+  &:hover {
+    border: 2px solid variables.$colorAzulA;
+    transform: scale(1.05, 1.05);
+  }
+  &:active {
+    transform: scale(1, 1);
+  }
+}
+
+.infoServiciosIcono {
+  height: 70%;
+  width: 70%;
+}

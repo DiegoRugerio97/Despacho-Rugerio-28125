@@ -1,0 +1,17 @@
+// normalize.css
+@import "_normalize";
+
+
+// Importacion de secciones
+@import "_index";
+@import "_contacto";
+@import "_servicios";
+@import "_blog";
+@import "_conocenos";
+
+
+// Importaciones de utilidades
+@import "_utilidades";
+@import "_bootstrapMods";
+@import "_animations";
+@import "_mediaQueries";

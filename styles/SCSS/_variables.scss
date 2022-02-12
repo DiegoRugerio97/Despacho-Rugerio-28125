@@ -1,0 +1,41 @@
+// Archivo utilizado para la declaracion de variables para el resto de los archivos .scss
+// Colores
+$colorBlanco: #ffffff;
+$colorNegro: #000000;
+
+// Paleta sitio
+$colorAzulA: #406882;
+$colorAzulB: #1a374d;
+$colorGris:#8a8a8a;
+$colorGrisTransparente:  rgba(0, 0, 0, 0.384);
+
+// Boton con clase btn-light
+$bgBotonLight1: rgb(252, 247, 247);
+$bgBotonLight2: rgba(207, 205, 205, 0.377);
+// Hover del boton
+$bgBotonLightHover1:  rgb(252, 247, 247);
+$bgBotonLightHover2:  rgba(158, 157, 157, 0.377);
+// Active del boton
+$bgBotonLightActive1:  rgb(252, 247, 247);
+$bgBotonLightActive2:  rgba(68, 67, 67, 0.377);
+
+// Bg con bg-dark
+$bgDark1: #131142a1;
+$bgDark2: #1e1b36;
+
+// Boton del Call to Action
+$bgBotonCall1: rgb(218, 214, 214);
+$bgBotonCall2: grey;
+// Hover del boton
+$bgBotonCallHover1:  rgb(201, 199, 199);
+$bgBotonCallHover2:  gray;
+// Active del boton
+$bgBotonCallActive1:  rgb(189, 187, 187);
+$bgBotonCallActive2:  rgb(99, 96, 96);
+
+// Bg del Nav
+$bgNav1: #ffffff;
+$bgNav2: rgba(0, 0, 0, 0.315);
+
+// Fuente
+$fuenteBasker: "Libre Baskerville";
