@@ -85,20 +85,20 @@
 // Se extiende flexRow en _clasesBase.css
 .footer {
   @extend .flexRow;
-  padding: 15px;
+  padding: 20px;
   height: 150px;
   margin-top: 30px;
   justify-content: space-evenly;
 }
 
 .footerTitulo {
-  font-size: 1.15rem;
+  font-size: 1rem;
   text-align: center;
 }
 
 .footerNav{
   list-style: none;
-  padding-inline-start: 10px;
+  padding-inline-start: 5px;
   font-size: 1rem;
   a{
     @include propiedadesTexto(
@@ -111,6 +111,13 @@
   }
 }
 
+.footerLogoFb{
+  transition: all 0.5s;
+  &:hover{
+    transform: scale(1.05, 1.05);
+  }
+  
+}
 
 // Clases de utilidad
 
