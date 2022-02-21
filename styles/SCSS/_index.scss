@@ -167,3 +167,17 @@ $imagenesGaleria: (
   height: 70%;
   width: 70%;
 }
+
+.floatChat{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color: variables.$colorGris;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px variables.$colorNegro;
+  z-index:100;  
+}
