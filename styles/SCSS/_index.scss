@@ -173,11 +173,13 @@ $imagenesGaleria: (
 	width:60px;
 	height:60px;
 	bottom:40px;
-	right:40px;
+	right:30px;
 	background-color: variables.$colorGris;
 	border-radius:50px;
 	text-align:center;
   font-size:30px;
 	box-shadow: 2px 2px 3px variables.$colorNegro;
   z-index:100;  
+  @extend .flexColumnaCenter;
+  @include clasesBase.animacion(aparecer,1, ease-in,0.75s);
 }
