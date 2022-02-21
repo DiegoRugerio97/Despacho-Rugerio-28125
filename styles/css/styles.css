@@ -427,6 +427,7 @@ template {
 }
 
 .infoCall {
+  padding: 10px;
   border-left: 2px solid #406882;
   border-right: 2px solid #406882;
 }
@@ -435,11 +436,12 @@ template {
   width: 100%;
   height: 100%;
   margin-bottom: 20px;
-  padding: 0px 0px;
+  padding: 10px;
 }
 
 .infoImg {
   max-width: 50%;
+  padding: 10px;
 }
 
 .infoServicios {
@@ -484,6 +486,10 @@ template {
   animation-timing-function: ease-in;
   animation-duration: 0.75s;
   animation-fill-mode: forwards;
+  transition: all 0.5s;
+}
+.floatChat:hover {
+  transform: scale(1.15, 1.15);
 }
 
 .campoTexto {
