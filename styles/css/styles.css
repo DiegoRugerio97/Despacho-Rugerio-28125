@@ -631,6 +631,10 @@ template {
   min-height: 400px;
 }
 
+.redondeado {
+  border-radius: 30px;
+}
+
 .display {
   display: none;
 }
@@ -808,6 +812,10 @@ template {
   min-height: 400px;
 }
 
+.redondeado {
+  border-radius: 30px;
+}
+
 .display {
   display: none;
 }
@@ -939,6 +947,10 @@ template {
   margin: 20px;
   width: 80%;
   min-height: 400px;
+}
+
+.redondeado {
+  border-radius: 30px;
 }
 
 .display {
@@ -1195,6 +1207,10 @@ template {
   margin: 20px;
   width: 80%;
   min-height: 400px;
+}
+
+.redondeado {
+  border-radius: 30px;
 }
 
 .display {
