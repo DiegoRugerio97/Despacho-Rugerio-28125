@@ -322,7 +322,7 @@ template {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 1px;
+  gap: 0.5px;
   z-index: 10;
 }
 
@@ -427,6 +427,7 @@ template {
 }
 
 .infoCall {
+  padding: 10px;
   border-left: 2px solid #406882;
   border-right: 2px solid #406882;
 }
@@ -435,11 +436,12 @@ template {
   width: 100%;
   height: 100%;
   margin-bottom: 20px;
-  padding: 0px 0px;
+  padding: 10px;
 }
 
 .infoImg {
   max-width: 50%;
+  padding: 10px;
 }
 
 .infoServicios {
@@ -465,6 +467,29 @@ template {
 .infoServiciosIcono {
   height: 70%;
   width: 70%;
+}
+
+.floatChat {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 30px;
+  background-color: #8a8a8a;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #000000;
+  z-index: 100;
+  animation-name: aparecer;
+  animation-iteration-count: aparecer;
+  animation-timing-function: ease-in;
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
+  transition: all 0.5s;
+}
+.floatChat:hover {
+  transform: scale(1.15, 1.15);
 }
 
 .campoTexto {
@@ -554,16 +579,37 @@ template {
 }
 
 .footer {
+  padding: 20px;
   height: 150px;
   margin-top: 30px;
+  justify-content: space-evenly;
 }
 
 .footerTitulo {
   font-size: 1rem;
+  text-align: center;
 }
 
-.footerLogo {
-  justify-self: end;
+.footerNav {
+  list-style: none;
+  padding-inline-start: 5px;
+  font-size: 1rem;
+}
+
+.footerNav a {
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  padding: 10px;
+  margin: auto;
+}
+
+.footerLogoFb {
+  transition: all 0.5s;
+}
+
+.footerLogoFb:hover {
+  transform: scale(1.05, 1.05);
 }
 
 .centrado {
@@ -583,6 +629,10 @@ template {
   margin: 20px;
   width: 80%;
   min-height: 400px;
+}
+
+.redondeado {
+  border-radius: 30px;
 }
 
 .display {
@@ -712,16 +762,35 @@ template {
 }
 
 .footer {
+  padding: 20px;
   height: 150px;
   margin-top: 30px;
+  justify-content: space-evenly;
 }
 
 .footerTitulo {
   font-size: 1rem;
+  text-align: center;
 }
 
-.footerLogo {
-  justify-self: end;
+.footerNav {
+  list-style: none;
+  padding-inline-start: 5px;
+  font-size: 1rem;
+}
+.footerNav a {
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  padding: 10px;
+  margin: auto;
+}
+
+.footerLogoFb {
+  transition: all 0.5s;
+}
+.footerLogoFb:hover {
+  transform: scale(1.05, 1.05);
 }
 
 .centrado {
@@ -741,6 +810,10 @@ template {
   margin: 20px;
   width: 80%;
   min-height: 400px;
+}
+
+.redondeado {
+  border-radius: 30px;
 }
 
 .display {
@@ -824,16 +897,37 @@ template {
 }
 
 .footer {
+  padding: 20px;
   height: 150px;
   margin-top: 30px;
+  justify-content: space-evenly;
 }
 
 .footerTitulo {
   font-size: 1rem;
+  text-align: center;
 }
 
-.footerLogo {
-  justify-self: end;
+.footerNav {
+  list-style: none;
+  padding-inline-start: 5px;
+  font-size: 1rem;
+}
+
+.footerNav a {
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  padding: 10px;
+  margin: auto;
+}
+
+.footerLogoFb {
+  transition: all 0.5s;
+}
+
+.footerLogoFb:hover {
+  transform: scale(1.05, 1.05);
 }
 
 .centrado {
@@ -853,6 +947,10 @@ template {
   margin: 20px;
   width: 80%;
   min-height: 400px;
+}
+
+.redondeado {
+  border-radius: 30px;
 }
 
 .display {
@@ -1059,16 +1157,37 @@ template {
 }
 
 .footer {
+  padding: 20px;
   height: 150px;
   margin-top: 30px;
+  justify-content: space-evenly;
 }
 
 .footerTitulo {
   font-size: 1rem;
+  text-align: center;
 }
 
-.footerLogo {
-  justify-self: end;
+.footerNav {
+  list-style: none;
+  padding-inline-start: 5px;
+  font-size: 1rem;
+}
+
+.footerNav a {
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1rem;
+  padding: 10px;
+  margin: auto;
+}
+
+.footerLogoFb {
+  transition: all 0.5s;
+}
+
+.footerLogoFb:hover {
+  transform: scale(1.05, 1.05);
 }
 
 .centrado {
@@ -1090,6 +1209,10 @@ template {
   min-height: 400px;
 }
 
+.redondeado {
+  border-radius: 30px;
+}
+
 .display {
   display: none;
 }
@@ -1105,6 +1228,10 @@ template {
 
   .botonBanner {
     font-size: 2.5rem;
+  }
+
+  .footerTitulo {
+    font-size: 1.15rem;
   }
 
   .display {
