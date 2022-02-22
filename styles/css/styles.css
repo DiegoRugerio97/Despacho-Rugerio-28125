@@ -294,13 +294,13 @@ template {
   box-sizing: border-box;
 }
 
-.flexColumna, .flexColumnaAround, .contenedorCall, .flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo, .floatChat {
+.flexColumna, .flexColumnaAround, .contenedorCall, .flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
 
-.flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo, .floatChat {
+.flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo {
   justify-content: center;
 }
 
@@ -322,7 +322,7 @@ template {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 1px;
+  gap: 0.5px;
   z-index: 10;
 }
 
@@ -502,13 +502,13 @@ template {
   box-shadow: 0 2px 0 0 #406882;
 }
 
-.flexColumna, .flexColumnaAround, .contenedorCall, .flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo, .floatChat {
+.flexColumna, .flexColumnaAround, .contenedorCall, .flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
 
-.flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo, .floatChat {
+.flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo {
   justify-content: center;
 }
 
@@ -685,13 +685,13 @@ template {
   height: 50%;
 }
 
-.flexColumna, .flexColumnaAround, .contenedorCall, .flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo, .floatChat {
+.flexColumna, .flexColumnaAround, .contenedorCall, .flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
 
-.flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo, .floatChat {
+.flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo {
   justify-content: center;
 }
 
@@ -820,13 +820,13 @@ template {
   display: none;
 }
 
-.flexColumna, .flexColumnaAround, .contenedorCall, .flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo, .floatChat {
+.flexColumna, .flexColumnaAround, .contenedorCall, .flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
 
-.flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo, .floatChat {
+.flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo {
   justify-content: center;
 }
 
@@ -1080,13 +1080,13 @@ template {
     visibility: visible;
   }
 }
-.flexColumna, .flexColumnaAround, .contenedorCall, .flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo, .floatChat {
+.flexColumna, .flexColumnaAround, .contenedorCall, .flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
 
-.flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo, .floatChat {
+.flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo {
   justify-content: center;
 }
 

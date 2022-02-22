@@ -11,7 +11,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 1px;
+  gap: 0.5px;
   z-index: 10;
 }
 
@@ -181,8 +181,7 @@ $imagenesGaleria: (
 	text-align:center;
   font-size:30px;
 	box-shadow: 2px 2px 3px variables.$colorNegro;
-  z-index:100;  
-  @extend .flexColumnaCenter;
+  z-index:100;
   @include clasesBase.animacion(aparecer,1, ease-in,0.75s);
   transition: all 0.5s;
   &:hover{
