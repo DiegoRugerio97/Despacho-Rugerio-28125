@@ -294,13 +294,13 @@ template {
   box-sizing: border-box;
 }
 
-.flexColumna, .flexColumnaAround, .contenedorCall, .flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo {
+.flexColumna, .flexColumnaAround, .contenedorCall, .flexColumnaCenter, .servicios a, .infoCall, .infoExtra, .infoServiciosCirculo {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
 
-.flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo {
+.flexColumnaCenter, .servicios a, .infoCall, .infoExtra, .infoServiciosCirculo {
   justify-content: center;
 }
 
@@ -502,13 +502,13 @@ template {
   box-shadow: 0 2px 0 0 #406882;
 }
 
-.flexColumna, .flexColumnaAround, .contenedorCall, .flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo {
+.flexColumna, .flexColumnaAround, .contenedorCall, .flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo, .servicios a {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
 
-.flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo {
+.flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo, .servicios a {
   justify-content: center;
 }
 
@@ -579,8 +579,10 @@ template {
 }
 
 .footer {
+  position: relative;
+  z-index: 200;
   padding: 20px;
-  height: 150px;
+  height: 25%;
   margin-top: 30px;
   justify-content: space-evenly;
 }
@@ -668,6 +670,33 @@ template {
   list-style-position: inside;
 }
 
+.servicios p {
+  text-align: center;
+  padding: 10px;
+}
+.servicios a {
+  gap: 5px;
+  background-color: #406882;
+  padding: 10px;
+  border-radius: 10%;
+  border: none;
+  transition: all 0.5s;
+  width: 50%;
+}
+.servicios a:hover {
+  transform: scale(1.05, 1.05);
+}
+.servicios a:active {
+  transform: scale(1, 1);
+}
+.servicios .textoCard {
+  color: #ffffff;
+  font-family: serif;
+  font-size: 1.15rem;
+  padding: 5px;
+  margin: auto auto;
+}
+
 .blogPost {
   margin-bottom: 0.4rem;
 }
@@ -685,13 +714,13 @@ template {
   height: 50%;
 }
 
-.flexColumna, .flexColumnaAround, .contenedorCall, .flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo {
+.flexColumna, .flexColumnaAround, .contenedorCall, .flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo, .servicios a {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
 
-.flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo {
+.flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo, .servicios a {
   justify-content: center;
 }
 
@@ -762,8 +791,10 @@ template {
 }
 
 .footer {
+  position: relative;
+  z-index: 200;
   padding: 20px;
-  height: 150px;
+  height: 25%;
   margin-top: 30px;
   justify-content: space-evenly;
 }
@@ -820,13 +851,13 @@ template {
   display: none;
 }
 
-.flexColumna, .flexColumnaAround, .contenedorCall, .flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo {
+.flexColumna, .flexColumnaAround, .contenedorCall, .flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo, .servicios a {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
 
-.flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo {
+.flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo, .servicios a {
   justify-content: center;
 }
 
@@ -897,8 +928,10 @@ template {
 }
 
 .footer {
+  position: relative;
+  z-index: 200;
   padding: 20px;
-  height: 150px;
+  height: 25%;
   margin-top: 30px;
   justify-content: space-evenly;
 }
@@ -1060,6 +1093,14 @@ template {
   color: #406882;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
+.collapsed:hover {
+  text-decoration: none;
+}
+
 @keyframes aparecer {
   0% {
     opacity: 0;
@@ -1080,13 +1121,13 @@ template {
     visibility: visible;
   }
 }
-.flexColumna, .flexColumnaAround, .contenedorCall, .flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo {
+.flexColumna, .flexColumnaAround, .contenedorCall, .flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo, .servicios a {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 }
 
-.flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo {
+.flexColumnaCenter, .infoCall, .infoExtra, .infoServiciosCirculo, .servicios a {
   justify-content: center;
 }
 
@@ -1157,8 +1198,10 @@ template {
 }
 
 .footer {
+  position: relative;
+  z-index: 200;
   padding: 20px;
-  height: 150px;
+  height: 25%;
   margin-top: 30px;
   justify-content: space-evenly;
 }

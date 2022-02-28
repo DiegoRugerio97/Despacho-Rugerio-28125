@@ -84,9 +84,11 @@
 // Clases para el footer
 // Se extiende flexRow en _clasesBase.css
 .footer {
+  position: relative;
+  z-index: 200;
   @extend .flexRow;
   padding: 20px;
-  height: 150px;
+  height: 25%;
   margin-top: 30px;
   justify-content: space-evenly;
 }

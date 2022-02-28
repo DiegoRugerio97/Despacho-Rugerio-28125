@@ -15,15 +15,19 @@
     <link rel="stylesheet" href="../styles/css/styles.css" />
     <title>C&R|Servicios</title>
     <!-- SEO - Keywords -->
-    <meta name="keywords" content="Servicios contables, Servicios fiscales, Servicios administrativos, optimizacion, nomina, contabilidad electrónica,estados financieros,auditoria, control interno">
+    <meta
+      name="keywords"
+      content="Servicios contables, Servicios fiscales, Servicios administrativos, optimizacion, nomina, contabilidad electrónica,estados financieros,auditoria, control interno"
+    />
     <!-- SEO Descripcion -->
-    <meta name="description" content="Conoce todos nuestros servicios servicios contables, fiscales y administrativos. Consulta el listado y elige la mejor opción para tu negocio.">
+    <meta
+      name="description"
+      content="Conoce todos nuestros servicios servicios contables, fiscales y administrativos. Consulta el listado y elige la mejor opción para tu negocio."
+    />
   </head>
   <body class="bodyFondo">
     <!-- Nav Responsive de BS -->
-    <nav
-      class="navbar navbar-expand-md navbar-light row py-0 contenedorHeader"
-    >
+    <nav class="navbar navbar-expand-md navbar-light row py-0 contenedorHeader">
       <!-- Logo -->
       <a class="navbar-brand" href="../index.html"
         ><img src="../img/logo.svg" alt="Logo" class="contenedorHeaderLogo"
@@ -72,61 +76,212 @@
       <h2 class="textoSubtitulo">
         Listado de los servicios que ofrece el despacho
       </h2>
-        <!-- Tabla responsive de BS -->
-        <!-- Incorporando BEM -->
-        <table class="table table-bordered table-responsive-sm table-hover">
-          <thead>
-            <tr class="tableEncabezado">
-              <th scope="col">Area</th>
-              <th scope="col">Descripción</th>
-              <th scope="col">Servicios</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row"  class="tableArea">Fiscal</th>
-              <td class="tableInformacion">Géstion del área fiscal de su empresa</td>
-              <td class="tableServicios">
+      <!-- Tabla responsive de BS -->
+      <!-- Incorporando BEM -->
+      <table class="table table-bordered table-responsive-sm table-hover">
+        <thead>
+          <tr class="tableEncabezado">
+            <th scope="col">Area</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Servicios</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="tableArea">Fiscal</th>
+            <td class="tableInformacion">
+              Géstion del área fiscal de su empresa
+            </td>
+            <td class="tableServicios">
+              <ul>
+                <li>Cambio de tipo de sociedad</li>
+                <li>Obligaciones fiscales</li>
+                <li>Estructuración fiscal</li>
+                <li>Consultoría</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="tableArea">Contable</th>
+            <td class="tableInformacion">
+              Contabilidad en general y contabilidad electrónica
+            </td>
+            <td class="tableServicios">
+              <ul>
+                <li>Nóminas</li>
+                <li>Registro de movimientos contables</li>
+                <li>Declaraciones fiscales</li>
+                <li>Asesoría y capacitación</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row" class="tableArea">Alianza Administrativa</th>
+            <td class="tableInformacion">
+              Soluciones administrativas para su empresa
+            </td>
+            <td class="tableServicios">
+              <ul>
+                <li>Auditorias</li>
+                <li>Control Interno</li>
+                <li>Elaboración de políticas y procedimientos</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- Servicios + Collapse -->
+      <section class="container servicios">
+        <div class="row">
+          <div class="col">
+            <p class="centrado">
+              <a
+                class="centrado"
+                data-toggle="collapse"
+                href="#collapseFiscal"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseFiscal"
+              >
+                <img src="../img/servicios/icono-1.png" alt="Fiscal" />
+                <span class="textoCard">Fiscal</span>
+              </a>
+            </p>
+            <div class="collapse" id="collapseFiscal">
+              <div class="card card-body">
                 <ul>
-                  <li>Cambio de tipo de sociedad</li>
-                  <li>Obligaciones fiscales</li>
-                  <li>Estructuración fiscal</li>
-                  <li>Consultoría</li>
+                  <li>Elaboración de Dictámenes Fiscales.</li>
+                  <li>Elaborar los Estados Financieros mensuales para ser presentados a la Dirección General, presentando análisis de variación del resultado.</li>
+                  <li>Elaboración y Revisión de Declaraciones Anuales y mensuales.</li>
                 </ul>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row"  class="tableArea">Contable</th>
-              <td class="tableInformacion">Contabilidad en general y contabilidad electrónica</td>
-              <td class="tableServicios">
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <p class="centrado">
+              <a
+                class="centrado"
+                data-toggle="collapse"
+                href="#collapseContable"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseContable"
+              >
+                <img src="../img/servicios/icono-2.png" alt="Fiscal" />
+                <span class="textoCard">Contable</span>
+              </a>
+            </p>
+            <div class="collapse" id="collapseContable">
+              <div class="card card-body">
                 <ul>
-                  <li>Nóminas</li>
-                  <li>Registro de movimientos contables</li>
-                  <li>Declaraciones fiscales</li>
-                  <li>Asesoría y capacitación</li>
+                  <li>Dictámenes para Impuestos Locales y Estatales, así como Dictámenes para efectos del Seguro Social.</li>
+                  <li>Elaboración y Revisión de la Nomina Operativa y Administrativa.</li>
+                  <li>Supervisión, Planeación y Control de los Registros Contables.</li>
                 </ul>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row"  class="tableArea">Alianza Administrativa</th>
-              <td class="tableInformacion">Soluciones administrativas para su empresa</td>
-              <td class="tableServicios">
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <p class="centrado">
+              <a
+                class="centrado"
+                data-toggle="collapse"
+                href="#collapseAdministrativo"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseAdministrativo"
+              >
+                <img src="../img/servicios/icono-3.png" alt="Administrativo" />
+                <span class="textoCard">Administrativo</span>
+              </a>
+            </p>
+            <div class="collapse" id="collapseAdministrativo">
+              <div class="card card-body">
                 <ul>
-                  <li>Auditorias</li>
-                  <li>Control Interno</li>
-                  <li>Elaboración de políticas y procedimientos</li>
+                  <li>Control, Análisis y Simplificación de Procesos Administrativos.</li>
+                  <li>Estudio del Control Interno para la Prevención de Contingencias en Procesos Claves.</li>
+                  <li> Expedientes de Empleados. Supervisión, Planeación y Control de los Registros Contables.</li>
                 </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p class="centrado">
+              <a
+                class="centrado"
+                data-toggle="collapse"
+                href="#collapseJuridica"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseJuridica"
+              >
+                <img src="../img/servicios/icono-4.png" alt="Juridica" />
+                <span class="textoCard">Juridica</span>
+              </a>
+            </p>
+            <div class="collapse" id="collapseJuridica">
+              <div class="card card-body">
+                <ul>
+                  <li>Atención y Seguimiento a Requerimientos de las diferentes instancias del Gobierno.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <p class="centrado">
+              <a
+                class="centrado"
+                data-toggle="collapse"
+                href="#collapseAuditoria"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseAuditoria"
+              >
+                <img src="../img/servicios/icono-5.png" alt="Auditoria" />
+                <span class="textoCard">Auditoria</span>
+              </a>
+            </p>
+            <div class="collapse" id="collapseAuditoria">
+              <div class="card card-body">
+                <ul>
+                  <li>Desarrollo de Equipos de Trabajo (Auditores) para la Elaboración de Auditorias con Fines Fiscales y Financieros.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <p class="centrado">
+              <a
+                class="centrado"
+                data-toggle="collapse"
+                href="#collapseInternacional"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseInternacional"
+              >
+                <img src="../img/servicios/icono-6.png" alt="Internacional" />
+                <span class="textoCard">Internacional</span>
+              </a>
+            </p>
+            <div class="collapse" id="collapseInternacional">
+              <div class="card card-body">
+                <ul>
+                  <li>Importaciones.</li>
+                  <li>Exportaciones.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
     <!-- Footer -->
     <footer class="container-fluid px-0">
       <div class="bg-dark footer row">
-        <span class= "footerTitulo">Alianza y Consultoría Empresarial C&R</span>
+        <span class="footerTitulo">Alianza y Consultoría Empresarial C&R</span>
         <ul class="footerNav">
           <li><a href="./conocenos.html">Conocenos</a></li>
           <li><a href="./servicios.html">Servicios</a></li>
@@ -135,7 +290,10 @@
         </ul>
         <a
           href="https://www.facebook.com/Alianza-y-Consultor%C3%ADa-Empresarial-CR-104931214911213"
-          ><img src="../img/icons/faceboog.svg" alt="Facebook" class="footerLogoFb"
+          ><img
+            src="../img/icons/faceboog.svg"
+            alt="Facebook"
+            class="footerLogoFb"
         /></a>
       </div>
     </footer>

@@ -127,3 +127,17 @@
       }
   }
 }
+
+// Modificacion de a.collapsed y a
+
+a{
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.collapsed{
+  &:hover{
+    text-decoration: none;
+  }
+}
