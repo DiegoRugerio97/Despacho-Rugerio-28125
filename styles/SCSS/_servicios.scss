@@ -41,6 +41,11 @@
 }
 
 .servicios{
+  background-image: url(../../img/servicios/imagen.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 10px;
   p{
     text-align: center;
     padding: 10px;
@@ -48,7 +53,7 @@
   a{
     @extend .flexColumnaCenter;
     gap: 5px;
-    background-color: variables.$colorAzulA;
+    background-color: variables.$colorAzulB;
     padding: 10px;
     border-radius: 10%;
     border: none;
@@ -66,7 +71,7 @@
     @include utilidades.propiedadesTexto(
     variables.$colorBlanco,
     serif,
-    1.15rem,
+    1rem,
     5px,
     auto auto
   );

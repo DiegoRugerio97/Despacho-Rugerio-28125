@@ -670,13 +670,20 @@ template {
   list-style-position: inside;
 }
 
+.servicios {
+  background-image: url(../../img/servicios/imagen.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 10px;
+}
 .servicios p {
   text-align: center;
   padding: 10px;
 }
 .servicios a {
   gap: 5px;
-  background-color: #406882;
+  background-color: #1a374d;
   padding: 10px;
   border-radius: 10%;
   border: none;
@@ -692,7 +699,7 @@ template {
 .servicios .textoCard {
   color: #ffffff;
   font-family: serif;
-  font-size: 1.15rem;
+  font-size: 1rem;
   padding: 5px;
   margin: auto auto;
 }
