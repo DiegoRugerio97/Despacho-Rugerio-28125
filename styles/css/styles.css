@@ -1499,6 +1499,21 @@ a:hover {
   .navbar-nav li {
     padding-left: 0px;
   }
+
+  .footerUpper {
+    font-size: 1.25rem;
+  }
+
+  .footerBottom label {
+    font-size: 1.25rem;
+  }
+  .footerBottom a {
+    font-size: 1.25rem;
+  }
+
+  .footerNavTitulo {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (min-width: 1024px) {
   .contenedorCall {
