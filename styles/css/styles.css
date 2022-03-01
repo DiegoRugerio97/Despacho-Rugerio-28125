@@ -498,6 +498,10 @@ template {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+.noticias h2 {
+  color: #ffffff;
+  font-size: 3rem;
+}
 
 .campoTexto {
   transition: all 0.5s;
@@ -685,7 +689,7 @@ template {
 
 .video {
   margin: 20px;
-  width: 80%;
+  width: 70%;
   min-height: 400px;
 }
 
@@ -946,7 +950,7 @@ template {
 
 .video {
   margin: 20px;
-  width: 80%;
+  width: 70%;
   min-height: 400px;
 }
 
@@ -1134,7 +1138,7 @@ template {
 
 .video {
   margin: 20px;
-  width: 80%;
+  width: 70%;
   min-height: 400px;
 }
 
@@ -1454,7 +1458,7 @@ a:hover {
 
 .video {
   margin: 20px;
-  width: 80%;
+  width: 70%;
   min-height: 400px;
 }
 

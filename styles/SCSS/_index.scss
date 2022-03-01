@@ -194,4 +194,8 @@ $imagenesGaleria: (
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  h2{
+    color: variables.$colorBlanco;
+    font-size: 3rem;
+  }
 }
