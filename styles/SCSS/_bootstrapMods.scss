@@ -141,3 +141,10 @@ a{
     text-decoration: none;
   }
 }
+
+// Modificacio a card body
+.card{
+  background-color: variables.$colorGrisTransparente;
+  color: variables.$colorBlanco;
+  font-size: 1.1rem;
+}

@@ -318,7 +318,7 @@ template {
 .gridGaleria {
   height: 85vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.384);
+  background-color: rgba(0, 0, 0, 0.473);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -381,7 +381,7 @@ template {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgba(0, 0, 0, 0.384);
+  background-color: rgba(0, 0, 0, 0.473);
   animation-name: aparecer;
   animation-iteration-count: aparecer;
   animation-timing-function: ease-out;
@@ -583,7 +583,6 @@ template {
   z-index: 200;
   padding: 20px;
   height: 25%;
-  margin-top: 30px;
   justify-content: space-evenly;
 }
 
@@ -675,7 +674,8 @@ template {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  padding: 10px;
+  background-size: cover;
+  padding: 40px 10px;
 }
 .servicios p {
   text-align: center;
@@ -802,7 +802,6 @@ template {
   z-index: 200;
   padding: 20px;
   height: 25%;
-  margin-top: 30px;
   justify-content: space-evenly;
 }
 
@@ -939,7 +938,6 @@ template {
   z-index: 200;
   padding: 20px;
   height: 25%;
-  margin-top: 30px;
   justify-content: space-evenly;
 }
 
@@ -1108,6 +1106,12 @@ a:hover {
   text-decoration: none;
 }
 
+.card {
+  background-color: rgba(0, 0, 0, 0.473);
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
 @keyframes aparecer {
   0% {
     opacity: 0;
@@ -1209,7 +1213,6 @@ a:hover {
   z-index: 200;
   padding: 20px;
   height: 25%;
-  margin-top: 30px;
   justify-content: space-evenly;
 }
 
