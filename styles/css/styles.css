@@ -600,6 +600,10 @@ template {
   margin: 0px 0px;
 }
 
+.footerUpper a {
+  width: fit-content;
+}
+
 .footerLogoFb {
   transition: all 0.5s;
 }
@@ -864,6 +868,9 @@ template {
   padding: 10px;
   margin: 0px 0px;
 }
+.footerUpper a {
+  width: fit-content;
+}
 
 .footerLogoFb {
   transition: all 0.5s;
@@ -1040,6 +1047,10 @@ template {
   font-size: 1rem;
   padding: 10px;
   margin: 0px 0px;
+}
+
+.footerUpper a {
+  width: fit-content;
 }
 
 .footerLogoFb {
@@ -1356,6 +1367,10 @@ a:hover {
   font-size: 1rem;
   padding: 10px;
   margin: 0px 0px;
+}
+
+.footerUpper a {
+  width: fit-content;
 }
 
 .footerLogoFb {
