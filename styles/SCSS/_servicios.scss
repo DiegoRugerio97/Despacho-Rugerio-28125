@@ -71,7 +71,7 @@
   .textoCard{
     @include utilidades.propiedadesTexto(
     variables.$colorBlanco,
-    serif,
+    'Open Sans',
     1rem,
     5px,
     auto auto
