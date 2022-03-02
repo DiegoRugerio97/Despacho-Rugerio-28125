@@ -188,14 +188,3 @@ $imagenesGaleria: (
     transform: scale(1.15,1.15);
   }
 }
-
-.noticias{
-  background-image: url(../../img/index/imagen-5.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  h2{
-    color: variables.$colorBlanco;
-    font-size: 3rem;
-  }
-}

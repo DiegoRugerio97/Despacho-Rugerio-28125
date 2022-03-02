@@ -492,17 +492,6 @@ template {
   transform: scale(1.15, 1.15);
 }
 
-.noticias {
-  background-image: url(../../img/index/imagen-5.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-.noticias h2 {
-  color: #ffffff;
-  font-size: 3rem;
-}
-
 .campoTexto {
   transition: all 0.5s;
 }
