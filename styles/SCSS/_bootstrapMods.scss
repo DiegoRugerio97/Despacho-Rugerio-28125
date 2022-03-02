@@ -32,10 +32,6 @@
   }
 }
 
-.bg-dark {
-  background-image: linear-gradient(variables.$bgDark1, variables.$bgDark2);
-  color: variables.$colorBlanco;
-}
 
 .mw-50 {
   max-width: 50%;
@@ -126,4 +122,25 @@
         color: variables.$colorAzulA;
       }
   }
+}
+
+// Modificacion de a.collapsed y a
+
+a{
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.collapsed{
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+// Modificacio a card body
+.card{
+  background-color: variables.$colorGrisTransparente;
+  color: variables.$colorBlanco;
+  font-size: 1.1rem;
 }
